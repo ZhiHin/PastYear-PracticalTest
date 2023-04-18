@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">test3</string>
+    <string name="GradeMarkSystem">Grade Mark System</string>
+    <string name="Name">Name</string>
+    <string name="YourSelection">Your Selection</string>
+    <string name="score">Score</string>
+    <string name="resultText">Result:</string>
+    <string name="submitButton">Submit</string>
+    <string name="ContactUS">Contact Us</string>
+    <string-array name="courseCode">
+        <item>BAIT2073</item>
+        <item>AACS3353</item>
+        <item>AACS2284</item>
+        <item>AACS2034</item>
+    </string-array>
+</resources>
