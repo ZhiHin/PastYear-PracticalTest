@@ -62,12 +62,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/YourSelection"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CourseSpinner"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="gone"/>
 
     <EditText
         android:id="@+id/Score"
@@ -78,6 +78,7 @@
         android:layout_marginTop="16dp"
         android:ems="5"
         android:hint="Enter Score"
+        android:inputType="number|numberDecimal"
         android:text="@string/score"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,20 +107,33 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Score"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="gone"/>
 
     <Button
         android:id="@+id/ContactUsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/ContactUS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GradeMarkSystem" />
+        app:layout_constraintTop_toTopOf="@+id/GradeMarkSystem"
+        app:layout_constraintVertical_bias="0.59000003" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/callUS"
+        app:layout_constraintBottom_toBottomOf="@+id/ContactUsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toEndOf="@+id/ContactUsButton"
+        app:layout_constraintTop_toTopOf="@+id/ContactUsButton"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
